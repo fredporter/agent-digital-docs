@@ -36,6 +36,22 @@ A typical project pack includes:
 - next steps
 - local-use notes
 
+## uDos — student docs (public)
+
+Three tracks — **Publishing** (one-click, GFM/Marp/MDX), **STEM** (uCode, Sonic), **Gaming** (worlds, mod tools). Everyone starts as a **Student**; **Contributor** and **Core** docs stay off this public site. Canonical business + doc-zone spec: **[uDosDev — Value ladder v1 (locked)](https://github.com/fredporter/uDosDev/blob/main/docs/specs/v4/UDOS_VALUE_LADDER_AND_PUBLISHING_PREMIUM_v1.md)**.
+
+**[uDos student hub — docs/public/](docs/public/)**
+
+## Product support (public)
+
+### Linkdown
+
+End-user help (quick start, vault & tasks, premium/MCP overview) with **Inkdown-lineage screenshots**:
+
+**[Linkdown — Help & support](support/linkdown/)**
+
+Authoritative manuals remain in the **[Linkdown-core](https://github.com/fredporter/Linkdown-core)** repository under `docs/` and `docs/guide/`.
+
 ## For development projects
 
 If the work becomes technical or code-based, move it into **uDOS Developer**.

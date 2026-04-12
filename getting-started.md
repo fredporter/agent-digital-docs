@@ -1,5 +1,7 @@
 # Getting Started
 
+> **uDos Publishing student path:** for Markdown-first publishing, GFM, and one-click deploy intent, start at **[docs/public/publishing/quick-start/](docs/public/publishing/quick-start/)** and the **[student hub](docs/public/)**. This page stays focused on **Agent Digital** conversation and binder workflows.
+
 ## Agent Digital
 
 ### 1. Start with an idea

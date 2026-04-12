@@ -1,3 +1,7 @@
 title: Agent Digital Docs
 theme: minima
 markdown: kramdown
+header_pages:
+  - index.md
+  - docs/public/README.md
+  - support/linkdown/index.md
