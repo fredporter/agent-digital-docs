@@ -1,0 +1,14 @@
+// apply-skin.ucode — ILLUSTRATIVE / PSEUDOCODE for course narrative
+// Real automation must match uCode v4: https://github.com/fredporter/uDosDev/blob/main/docs/specs/v4/UCODE_v4.md
+// Goal: copy usxd-wireframe.css into target folder and ensure <link> in index.html
+
+// Usage (conceptual): ucode run apply-skin --path ~/Code/polls
+
+PRINT "Applying uDos wireframe skin..."
+
+// LET target_path = ARGUMENT("--path")
+// LET css_source = "~/.udos/skins/usxd-wireframe.css"
+// COPY css_source TO target_path + "/usxd-wireframe.css"
+// IF index.html exists AND missing link → INSERT <link rel="stylesheet" href="usxd-wireframe.css"> before </head>
+
+PRINT "Done — refresh the browser after linking usxd-wireframe.css after style.css."

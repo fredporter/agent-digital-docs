@@ -1,0 +1,11 @@
+// remove-skin.ucode — ILLUSTRATIVE / PSEUDOCODE for course narrative
+// Real automation must match uCode v4: https://github.com/fredporter/uDosDev/blob/main/docs/specs/v4/UCODE_v4.md
+
+// Usage (conceptual): ucode run remove-skin --path ~/Code/polls
+
+PRINT "Removing uDos wireframe skin..."
+
+// DELETE target_path + "/usxd-wireframe.css" if present
+// REMOVE lines containing usxd-wireframe.css from index.html
+
+PRINT "Done — refresh to see original styles."

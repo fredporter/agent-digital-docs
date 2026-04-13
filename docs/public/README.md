@@ -11,7 +11,7 @@ permalink: /docs/public/
 | Track | Hub | Focus |
 | --- | --- | --- |
 | **Publishing** | [Publishing](publishing/quick-start/) | One-click publish, GFM, Marp, MDX, theming, Premium |
-| **STEM** | [STEM](stem/) | uCode, Sonic, preconfigured labs |
+| **STEM** | [STEM](stem/) | uCode, Sonic, labs — [Course split (Postiz + Course 2)](stem/courses/course-split-postiz-usxd-skin-lab/) · [Course 2 skin lab (locked)](stem/courses/course-2-skin-lab-wireframe-locked/) |
 | **Gaming** | [Gaming](gaming/) | Worlds, mod tools, game uCode |
 
 ## Product context

@@ -1,0 +1,124 @@
+/* usxd-wireframe.css — uDos SKIN for simple web apps (Course 2) */
+/*
+ * OPEN BOX — You can see everything. Change anything.
+ * To use: Link this AFTER your original style.css
+ *   <link rel="stylesheet" href="usxd-wireframe.css">
+ *
+ * Course: docs/public/stem/courses/course-2-skin-lab-wireframe-locked.md
+ */
+
+/* ============================================
+   STEP 1: Customise these variables
+   ============================================ */
+:root {
+  --udos-ink: #000000;
+  --udos-paper: #ffffff;
+  --udos-grid: #e0e0e0;
+  --udos-accent: #00ff00;
+
+  --udos-font-mono: "Monaco", "Courier New", monospace;
+  --udos-font-sans: "Geneva", "Helvetica", sans-serif;
+
+  --udos-cell: 8px;
+  --udos-tile: 16px;
+}
+
+/* ============================================
+   STEP 2: Core overrides (edit only if needed)
+   ============================================ */
+body {
+  background-color: var(--udos-paper);
+  color: var(--udos-ink);
+  font-family: var(--udos-font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--udos-font-mono);
+  font-weight: bold;
+}
+
+body.udos-teletext {
+  background-image: linear-gradient(var(--udos-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--udos-grid) 1px, transparent 1px);
+  background-size: var(--udos-cell) var(--udos-cell);
+}
+
+a {
+  color: var(--udos-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--udos-grid);
+}
+
+a:hover {
+  color: var(--udos-accent);
+}
+
+button,
+.button {
+  background-color: var(--udos-paper);
+  border: 1px solid var(--udos-ink);
+  color: var(--udos-ink);
+  font-family: var(--udos-font-mono);
+  padding: calc(var(--udos-cell) * 1) calc(var(--udos-cell) * 2);
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--udos-ink);
+  color: var(--udos-paper);
+}
+
+input,
+textarea,
+select {
+  background-color: var(--udos-paper);
+  border: 1px solid var(--udos-grid);
+  font-family: var(--udos-font-mono);
+  padding: var(--udos-cell);
+}
+
+.card,
+.container,
+.box {
+  border: 1px solid var(--udos-grid);
+  padding: var(--udos-tile);
+  background-color: var(--udos-paper);
+}
+
+/* ============================================
+   STEP 3: Optional — uncomment for teletext grid on body
+   ============================================
+body {
+  background-image:
+    linear-gradient(var(--udos-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--udos-grid) 1px, transparent 1px);
+  background-size: var(--udos-cell) var(--udos-cell);
+}
+   ============================================ */
+
+/* ============================================
+   STEP 4: Optional — retro scanline overlay (uncomment block)
+   ============================================
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0px,
+    rgba(0, 0, 0, 0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
+   ============================================ */

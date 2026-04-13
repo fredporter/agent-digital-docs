@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Polls — uDos lab fallback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Polls</h1>
+
+    <div class="poll">
+      <h2>What&apos;s your favorite uDos feature?</h2>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt1" value="vault" />
+        <label for="opt1">Vault (open box)</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt2" value="ucode" />
+        <label for="opt2">uCode (easy automation)</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt3" value="feeds" />
+        <label for="opt3">Feeds &amp; Spools</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt4" value="grid" />
+        <label for="opt4">uGrid spatial system</label>
+      </div>
+      <button type="button" id="vote-btn">Vote</button>
+      <div id="results" class="results"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("vote-btn").addEventListener("click", function () {
+      const selected = document.querySelector('input[name="poll"]:checked');
+      const resultsDiv = document.getElementById("results");
+      if (selected) {
+        resultsDiv.innerHTML =
+          "<p>Thank you for voting for: <strong>" +
+          selected.value +
+          "</strong>!</p>" +
+          "<p>Results can feed into your uDos workflow in later courses.</p>";
+      } else {
+        alert("Please select an option to vote.");
+      }
+    });
+  </script>
+</body>
+</html>
